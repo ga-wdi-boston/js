@@ -235,7 +235,7 @@ for (var i = 0; i < 10; i++) {
 }
 ```
 
-## Quiz
+## Assessment
 
 Please follow the instructions at https://github.com/ga-wdi-boston/js-fundamentals-08-solo-assessment
 
