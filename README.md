@@ -8,7 +8,7 @@ A review of many of the building blocks of JavaScript.
 
 Although ECMAScript 6 ([ES6](http://www.ecma-international.org/ecma-262/6.0/)) is the latest standard, adopted in June of 2015, we'll mostly focus on features from the [ES5](http://www.ecma-international.org/ecma-262/5.1/) standard.  Some of the references in this document may include descriptions of ES6 features.  These features will usually be denoted with `(new in ECMAScript 6)` in the main text or with a **flask icon** in the navigation sidebar.
 
-`let` and `const` are the primary ES6 features introduced in this training.
+`let` and `const` are the primary ES6 features introduced in this training.  In order to to use these features, we'll need to be in strict mode.
 
 ## Objectives
 
@@ -120,6 +120,7 @@ We'll use Node.js as a [REPL](https://nodejs.org/api/repl.html) and script runne
 
 ```bash
 $ node
+> 'use strict';
 >
 ```
 
@@ -154,7 +155,6 @@ height = 'Antony';
 
 Although it doesn't cause an error, avoid confusing code like the above.
 
-
 Note:  The increment and decrement operators assign their operand.
 
 ##### Constants
@@ -179,7 +179,7 @@ Simple calculations:
 11 % 5;
 ```
 
-Expressions with variables only change values with assignment
+Expressions with variables only change values with assignment.
 
 ```js
 height - 1;
@@ -267,14 +267,15 @@ For non-strict-equality comparisons with numbers, boolean values are coerced to 
 The if statement:
 
 ```js
+'use strict';
 //We'll learn about require later in the course
-const ask = require('./ask.js');
+const ask = require('../lib/ask.js');
 
 let name = ask('What\'s your name? ');
 if (name === 'Antony') {
   console.log('Hi, Antony!');
-} else if (name === 'Matt') {
-  console.log('Hi, Matt!');
+} else if (name === 'Jason') {
+  console.log('Hi, Jason!');
 } else {
   console.log('Hi, stranger.');
 }
@@ -283,6 +284,7 @@ if (name === 'Antony') {
 The while loop:
 
 ```js
+'use strict';
 //We'll learn about require later in the course
 const ask = require('./ask.js');
 
