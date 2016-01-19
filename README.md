@@ -159,7 +159,7 @@ Note:  The increment and decrement operators assign their operand.
 
 ##### Constants
 
-Constants must be initialized - assigned a value when created (in chrome or node they will always have the value `undefined`, in firefox uninitialized constantcs are a syntax error).
+Constants must be initialized, assigned a value, when created.  Uninitialized constants are a syntax error in Firefox.  In Chrome or node they will always have the value `undefined`.
 
 ```js
 const pi = 3.14159265359; // rounded
