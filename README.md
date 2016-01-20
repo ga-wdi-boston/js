@@ -264,7 +264,7 @@ For non-strict-equality comparisons with numbers, boolean values are coerced to 
 
 ### Flow Control
 
-The if statement:
+The `if` statement:
 
 ```js
 'use strict';
@@ -281,7 +281,7 @@ if (name === 'Antony') {
 }
 ```
 
-The while loop:
+The `while` loop:
 
 ```js
 'use strict';
@@ -298,7 +298,7 @@ while (answer !== 'Antony') {
 console.log('You got it in ' + count + ' tries!');
 ```
 
-The for loop:
+The `for` loop:
 
 ```js
 for (let i = 0; i < 10; i++) {
@@ -306,7 +306,7 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-which is equivalent to:
+which is - almost - equivalent to:
 
 ```js
 let i = 0;
