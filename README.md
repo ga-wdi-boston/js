@@ -40,6 +40,21 @@ Note: when creating and then immediately switching to a branch you can use `git 
 
 ## Basics
 
+#### Node.js
+
+We'll use Node.js as a [REPL](https://nodejs.org/api/repl.html) and script runner to evaluate expressions and explore JavaScript features.
+
+- <b>R</b>ead
+- <b>E</b>valuate
+- <b>P</b>rint
+- <b>L</b>oop
+
+```bash
+$ node
+> 'use strict';
+>
+```
+
 ### Primitive types
 
 ES5 has 5 primitive [types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures): `Number`, `String`, `Boolean`, `null`, and `undefined`.
@@ -95,7 +110,7 @@ negation, numeric conversion, <br> prefix increment, type | right-to-left | `!` 
 multiplication, division | left-to-right | `* / %`
 addition, subtraction | left-to-right | `+ -`
 relation, instance | left-to-right | `<` `<=` `>` ``>=` `instanceof`
-strict equality | left-to-right | `===` ``!===`
+strict equality | left-to-right | `===` `!===`
 logical and | left-to-right | `&&`
 logical or | left-to-right | <code>&#124;&#124;</code>
 conditional | right-to-left | `?:`
@@ -109,28 +124,6 @@ The simplest expression is a variable or literal followed by a semicolon. More c
 
 An expression with all of the variables replaced with literals that are equal to the values of the variables will produce the same result.
 
-#### Node.js
-
-We'll use Node.js as a [REPL](https://nodejs.org/api/repl.html) and script runner to evaluate expressions and explore JavaScript features.
-
-- <b>R</b>ead
-- <b>E</b>valuate
-- <b>P</b>rint
-- <b>L</b>oop
-
-```bash
-$ node
-> 'use strict';
->
-```
-
-What other tools could we use as a JavaScript REPL?
-
-Are there benefits or drawbacks to using one over another?
-
-What about a script runner?
-
-Benefits or drawbacks with the options available?
 
 #### Assignment expressions
 
@@ -228,7 +221,7 @@ The logical operators 'short circuit', which means they stop evaluating operands
 
 ##### truthy and falsy
 
-What do you think of when you here 'truthy' and 'falsy'?
+What do you think of when you hear 'truthy' and 'falsy'?
 
 The falsy list (everything else in JavaScript is truthy),
 
