@@ -1,6 +1,5 @@
-//We'll learn how the following line of code works later in the course
-var ask = typeof(prompt) === 'undefined' ? require('./ask.js') : prompt;
+'use strict';
 
-var name = ask('What\'s your name? ');
+let name = 'Lauren';
 
 console.log("Hi, " + name);
