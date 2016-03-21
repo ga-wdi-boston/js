@@ -279,7 +279,7 @@ The `while` loop:
 ```js
 'use strict';
 //We'll learn about require later in the course
-const ask = require('./ask.js');
+const ask = require('../lib/ask.js');
 
 let count = 0;
 let answer = '';
