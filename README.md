@@ -109,7 +109,7 @@ postfix increment | n/a | `++` `--`
 negation, numeric conversion, <br> prefix increment, type | right-to-left | `!` `-` `+` `++` `--` `typeof`
 multiplication, division | left-to-right | `* / %`
 addition, subtraction | left-to-right | `+ -`
-relation, instance | left-to-right | `<` `<=` `>` ``>=` `instanceof`
+relation, instance | left-to-right | `<` `<=` `>` `>=` `instanceof`
 strict equality | left-to-right | `===` `!===`
 logical and | left-to-right | `&&`
 logical or | left-to-right | <code>&#124;&#124;</code>
