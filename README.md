@@ -329,3 +329,9 @@ See the following sections at https://developer.mozilla.org/en-US/docs/Web/JavaS
 - Expressions and operators
 - Number and dates
 - Text formatting
+
+
+## [License](LICENSE)
+
+Source code distributed under the MIT license. Text and other assets copyright
+General Assembly, Inc., all rights reserved.
