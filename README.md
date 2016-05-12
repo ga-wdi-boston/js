@@ -169,8 +169,8 @@ name;
 Remember: JavaScript variables are untyped.
 
 ```js
-height = 76;
-height = 'Antony';
+name = 'Antony';
+name = 45;
 ```
 
 Although it doesn't cause an error, avoid confusing code like the above.
@@ -208,18 +208,23 @@ Expressions with variables only change values with assignment.
 ```js
 height = 80;
 height - 1;
-height; <-- What will height return here?
+height;
 ```
+
+What will `height` be at the end of the 3 lines above?
 
 Now let's compare some common methods of counting.
 
 ```js
 let i;
 i = 0;
+i;
 i = i + 1;
-i = 0;
+i;
 i += 1;
+i;
 ++i;
+i;
 i++;
 i;
 ```
@@ -290,7 +295,7 @@ If either operand of the binary `+` operator is a string the operator converts
 the other operator to a string.  Some results of this conversion are more useful
 than others.
 
-Note the different between `3 + 5 + ' times';` and `'times ' + 3 + 5`;?
+Note the difference between `3 + 5 + ' times';` and `'times ' + 3 + 5`;?
 
 The unary `!` operator converts its operand to a boolean value.
 
@@ -299,14 +304,24 @@ For non-strict-equality comparisons with numbers, boolean values are coerced to
 
 ### Flow Control
 
+Remember how we used node as a REPL earlier? It actually has a completely
+different use as well--as a script runner. Let's see how that works below using
+some examples of flow control.
+
+To start, make sure you're in the 'lib' folder and add 3 files using the touch
+command from your terminal.
+
+touch greeter.js psychic.js forLoop.js five.js
+
 The `if` statement:
+Open greeter.js and we'll type some code in...
 
 ```js
 'use strict';
 //We'll learn about require later in the course
 const ask = require('../lib/ask.js');
 
-let name = ask('What\'s your name? ');
+let name = ask("What's your name? ");
 if (name === 'Antony') {
   console.log('Hi, Antony!');
 } else if (name === 'Jason') {
@@ -315,6 +330,13 @@ if (name === 'Antony') {
   console.log('Hi, stranger.');
 }
 ```
+
+Type `node greeter.js`
+Type your name and hit ENTER.
+
+Press the UP arrow on your keyboard to reload the previous line OR type
+`node greeter.js` again.
+Type Antony and hit ENTER.
 
 The `while` loop:
 
