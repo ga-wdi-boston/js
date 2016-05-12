@@ -305,16 +305,16 @@ For non-strict-equality comparisons with numbers, boolean values are coerced to
 ### Flow Control
 
 Remember how we used node as a REPL earlier? It actually has a completely
-different use as well--as a script runner. Let's see how that works below using
-some examples of flow control.
+different use as well--as a script runner. Let's see how that works while we
+explore some examples of flow control.
 
-To start, make sure you're in the 'lib' folder and add 3 files using the touch
+To start, make sure you're in the 'lib' folder and add 3 files using the `touch`
 command from your terminal.
 
-touch greeter.js psychic.js forLoop.js five.js
+`touch greeter.js psychic.js forLoop.js five.js`
 
 The `if` statement:
-Open greeter.js and we'll type some code in...
+  Open `greeter.js` and we'll type some code in...
 
 ```js
 'use strict';
@@ -331,14 +331,16 @@ if (name === 'Antony') {
 }
 ```
 
+Save this file and return to your terminal.
 Type `node greeter.js`
 Type your name and hit ENTER.
 
 Press the UP arrow on your keyboard to reload the previous line OR type
 `node greeter.js` again.
-Type Antony and hit ENTER.
+Type `Antony` and hit ENTER.
 
 The `while` loop:
+  Now go to `psychic.js`.
 
 ```js
 'use strict';
@@ -355,6 +357,12 @@ while (answer !== 'Antony') {
 console.log('You got it in ' + count + ' tries!');
 ```
 
+  Save this file and return to your terminal.
+  Type `node psychic.js`
+  Type your name and hit ENTER.
+  Try your neighbors name.
+  Try `Antony`.
+
 The `for` loop:
 
 ```js
@@ -362,6 +370,10 @@ for (let i = 0; i < 10; i++) {
   console.log(i);
 }
 ```
+
+  Save this file and return to your terminal.
+  Think about what you expect this file to produce to the terminal...
+  Now type `node forLoop.js` and hit ENTER.
 
 which is - almost - equivalent to:
 
@@ -374,6 +386,7 @@ while (i < 10) {
 ```
 
 Nesting conditionals in loops:
+  Now go to `five.js`.
 
 ```js
 for (let i = 0; i < 10; i++) {
@@ -382,6 +395,9 @@ for (let i = 0; i < 10; i++) {
   }
 }
 ```
+
+  Save. Think about what you expect this file to produce to the terminal...
+  Now type `node five.js` and hit ENTER.
 
 ## Additional Resources
 
