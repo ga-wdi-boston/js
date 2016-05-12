@@ -40,21 +40,6 @@ Note: when creating and then immediately switching to a branch you can use `git 
 
 ## Basics
 
-#### Node.js
-
-We'll use Node.js as a [REPL](https://nodejs.org/api/repl.html) and script runner to evaluate expressions and explore JavaScript features.
-
-- <b>R</b>ead
-- <b>E</b>valuate
-- <b>P</b>rint
-- <b>L</b>oop
-
-```bash
-$ node
-> 'use strict';
->
-```
-
 ### Primitive types
 
 ES5 has 5 primitive [types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures): `Number`, `String`, `Boolean`, `null`, and `undefined`.
@@ -77,15 +62,32 @@ The ES6 primitive type `Symbol` is intentionally omitted.
 
 Literals represent specific values in the source code.  Some examples are `1`, `'A string'`, `null`.
 
+## CODE ALONG
+
 ### Variables
 
+#### Node.js
+
+We'll use Node.js as a [REPL](https://nodejs.org/api/repl.html) and script runner to evaluate expressions and explore JavaScript features.
+
+- <b>R</b>ead
+- <b>E</b>valuate
+- <b>P</b>rint
+- <b>L</b>oop
+
+```bash
+$ node
+> 'use strict';
+>
+```
+
 ```js
-> dob;
+> name;
 ```
 
 Variables need to be declared.
 ```js
-> let dob;
+> let name;
 ```
 
 Variables name storage for the value they contain.  Because JavaScript is a dynamically typed language, you can assign a value of one type to a variable and then later assign a value of a different type to that same variable.
@@ -107,7 +109,7 @@ Type | Associativity | Operators
 grouping | n/a | `()`
 postfix increment | n/a | `++` `--`
 negation, numeric conversion, <br> prefix increment, type | right-to-left | `!` `-` `+` `++` `--` `typeof`
-multiplication, division | left-to-right | `* / %`
+multiplication, division, modulo | left-to-right | `* / %`
 addition, subtraction | left-to-right | `+ -`
 relation, instance | left-to-right | `<` `<=` `>` `>=` `instanceof`
 strict equality | left-to-right | `===` `!===`
@@ -148,7 +150,8 @@ height = 'Antony';
 
 Although it doesn't cause an error, avoid confusing code like the above.
 
-Note:  The increment and decrement operators assign their operand.
+Now try it yourself!
+Create a new variable named `developer`, and store the name of the person sitting next to you in it. Now change it to someone else in the room!
 
 ##### Constants
 
@@ -175,8 +178,9 @@ Simple calculations:
 Expressions with variables only change values with assignment.
 
 ```js
+height = 80;
 height - 1;
-height;
+height; <-- What will height return here?
 ```
 
 Now let's compare some common methods of counting.
@@ -202,6 +206,8 @@ givenName = 'Antony';
 surname = 'Donovan';
 fullName = givenName + ' ' + surname;
 ```
+
+Try it with your name now!
 
 #### Boolean expressions
 
