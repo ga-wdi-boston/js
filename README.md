@@ -6,37 +6,44 @@
 
 A review of many of the building blocks of JavaScript.
 
-Although ECMAScript 6 ([ES6](http://www.ecma-international.org/ecma-262/6.0/)) is the latest standard, adopted in June of 2015, we'll mostly focus on features from the [ES5](http://www.ecma-international.org/ecma-262/5.1/) standard.  Some of the references in this document may include descriptions of ES6 features.  These features will usually be denoted with `(new in ECMAScript 6)` in the main text or with a **flask icon** in the navigation sidebar.
+Although ECMAScript 6 ([ES6](http://www.ecma-international.org/ecma-262/6.0/))
+is the latest standard, adopted in June of 2015, we'll mostly focus on features
+from the [ES5](http://www.ecma-international.org/ecma-262/5.1/) standard.  Some
+of the references in this document may include descriptions of ES6 features.
+These features will usually be denoted with `(new in ECMAScript 6)` in the main
+text or with a **flask icon** in the navigation sidebar.
 
-`let` and `const` are the primary ES6 features introduced in this training.  In order to to use these features, we'll need to be in strict mode.
+`let` and `const` are the primary ES6 features introduced in this training.  In
+order to to use these features, we'll need to be in strict mode.
 
 ## Objectives
 
 By the end of this lesson, students should be able to:
 
-- List all 5 JavaScript primitives and give an example of each
-- Identify the operator in an expression and explain what it does
-- Define variable and contrast with value
-- Evaluate simple JavaScript by inspection
-- Write simple scripts that use flow control
+-   List all 5 JavaScript primitives and give an example of each
+-   Identify the operator in an expression and explain what it does
+-   Define variable and contrast with value
+-   Evaluate simple JavaScript by inspection
+-   Write simple scripts that use flow control
 
 ## To start
 
-- Fork this repository (link in slack).
-- Change to the directory `~/wdi/training`.
-- Clone the fork.
-- `cd` into the cloned repository
+-   Fork this repository (link in slack).
+-   Change to the directory `~/wdi/training`.
+-   Clone the fork.
+-   `cd` into the cloned repository
 
 Then:
 
 ```sh
-$ git branch training
-$ git checkout training
-$ atom .
-$ npm install
+git branch training
+git checkout training
+atom .
+npm install
 ```
 
-Note: when creating and then immediately switching to a branch you can use `git checkout -b <new branch name>`.
+Note: when creating and then immediately switching to a branch you can use
+`git checkout -b <new branch name>`.
 
 ## Basics
 
@@ -44,23 +51,26 @@ Note: when creating and then immediately switching to a branch you can use `git 
 
 ES5 has 5 primitive [types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures): `Number`, `String`, `Boolean`, `null`, and `undefined`.
 
-Type | Examples
----- | ----------------
-Number | `-0`, `NaN`, `Infinity`
-String | `''`, `"The non-empty string."`
-Boolean | `true`, `false`
-null | `null`
-undefined | `undefined`
+| Type      | Examples                        |
+|-----------|---------------------------------|
+| Number    | `-0`, `NaN`, `Infinity`         |
+| String    | `''`, `"The non-empty string."` |
+| Boolean   | `true`, `false`                 |
+| null      | `null`                          |
+| undefined | `undefined`                     |
 
-Primitive types represent **immutable** values.  We'll contrast this with reference types in a later lesson.
+Primitive types represent **immutable** values.  We'll contrast this with
+reference types in a later lesson.
 
-The types Number and String both have large sets of possible values.  Boolean has only two values and null and undefined each have just one.
+The types Number and String both have large sets of possible values.  Boolean
+has only two values and null and undefined each have just one.
 
 The ES6 primitive type `Symbol` is intentionally omitted.
 
 ### Literals
 
-Literals represent specific values in the source code.  Some examples are `1`, `'A string'`, `null`.
+Literals represent specific values in the source code.
+Some examples are `1`, `'A string'`, `null`.
 
 ## CODE ALONG
 
@@ -68,12 +78,13 @@ Literals represent specific values in the source code.  Some examples are `1`, `
 
 #### Node.js
 
-We'll use Node.js as a [REPL](https://nodejs.org/api/repl.html) and script runner to evaluate expressions and explore JavaScript features.
+We'll use Node.js as a [REPL](https://nodejs.org/api/repl.html) and script
+runner to evaluate expressions and explore JavaScript features.
 
-- <b>R</b>ead
-- <b>E</b>valuate
-- <b>P</b>rint
-- <b>L</b>oop
+-   **R**ead
+-   **E**valuate
+-   **P**rint
+-   **L**oop
 
 ```bash
 $ node
@@ -86,46 +97,60 @@ $ node
 ```
 
 Variables need to be declared.
+
 ```js
 > let name;
 ```
 
-Variables name storage for the value they contain.  Because JavaScript is a dynamically typed language, you can assign a value of one type to a variable and then later assign a value of a different type to that same variable.
+Variables name storage for the value they contain.  Because JavaScript is a
+dynamically typed language, you can assign a value of one type to a variable and
+then later assign a value of a different type to that same variable.
 
-In JavaScript, `null` represents the explicitly omitted value, whereas `undefined` represents the default omitted value.  Variables that have been declared but are uninitialized or unset have the value `undefined`.
+In JavaScript, `null` represents the explicitly omitted value, whereas
+`undefined` represents the default omitted value.  Variables that have been
+declared but are uninitialized or unset have the value `undefined`.
 
 ### Operators
 
-Operators come in three classes, unary, binary (the most common), and ternary (there is only one).
+Operators come in three classes, unary, binary (the most common), and ternary
+(there is only one).
 
-Operator precedence determines the order in which operators are evaluated. Operators with higher precedence are evaluated first.
+Operator precedence determines the order in which operators are evaluated.
+Operators with higher precedence are evaluated first.
 
-Associativity determines the order in which operators of the same precedence are processed.
+Associativity determines the order in which operators of the same precedence are
+processed.
 
-The following table lists a subset of the JavaScript [operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence) from higher to lower precedence.
+The following table lists a subset of the JavaScript
+[operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+from higher to lower precedence.
 
-Type | Associativity | Operators
----- | ------------- | ---------
-grouping | n/a | `()`
-postfix increment | n/a | `++` `--`
-negation, numeric conversion, <br> prefix increment, type | right-to-left | `!` `-` `+` `++` `--` `typeof`
-multiplication, division, modulo | left-to-right | `* / %`
-addition, subtraction | left-to-right | `+ -`
-relation, instance | left-to-right | `<` `<=` `>` `>=` `instanceof`
-strict equality | left-to-right | `===` `!===`
-logical and | left-to-right | `&&`
-logical or | left-to-right | <code>&#124;&#124;</code>
-conditional | right-to-left | `?:`
-assignment | right-to-left | `=` `+=` `-=` <code>&#42;=</code> `/=` `%=`
+| Type                                                 | Associativity | Operators                                   |
+|------------------------------------------------------|---------------|---------------------------------------------|
+| grouping                                             | n/a           | `()`                                        |
+| postfix increment                                    | n/a           | `++` `--`                                   |
+| negation, numeric conversion, prefix increment, type | right-to-left | `!` `-` `+` `++` `--` `typeof`              |
+| multiplication, division, modulo                     | left-to-right | `* / %`                                     |
+| addition, subtraction                                | left-to-right | `+ -`                                       |
+| relation, instance                                   | left-to-right | `<` `<=` `>` `>=` `instanceof`              |
+| strict equality                                      | left-to-right | `===` `!===`                                |
+| logical and                                          | left-to-right | `&&`                                        |
+| logical or                                           | left-to-right | `||`                                        |
+| conditional                                          | right-to-left | `?:`                                        |
+| assignment                                           | right-to-left | `=` `+=` `-=` `*=` `/=` `%=`                |
 
 ### Expressions
 
-An expression is a combination of literals, variables, operators, function invocations and sub-expressions that are interpreted and produce a value.  Not all such combinations produce _sensible_ results.
+An expression is a combination of literals, variables, operators, function
+invocations and sub-expressions that are interpreted and produce a value.  Not
+all such combinations produce _sensible_ results.
 
-The simplest expression is a variable or literal followed by a semicolon. More complicated expressions are formed by combining simpler expressions using operators.
+The simplest expression is a variable or literal followed by a semicolon. More
+complicated expressions are formed by combining simpler expressions using
+operators.
 
-An expression with all of the variables replaced with literals that are equal to the values of the variables will produce the same result.
-
+An expression with all of the variables replaced with literals that are equal to
+the values of the variables will produce the same result.
 
 #### Assignment expressions
 
@@ -151,11 +176,14 @@ height = 'Antony';
 Although it doesn't cause an error, avoid confusing code like the above.
 
 Now try it yourself!
-Create a new variable named `developer`, and store the name of the person sitting next to you in it. Now change it to someone else in the room!
+Create a new variable named `developer`, and store the name of the person
+sitting next to you in it. Now change it to someone else in the room!
 
 ##### Constants
 
-Constants must be initialized, assigned a value, when created.  Uninitialized constants are a syntax error in Firefox.  In Chrome or node they will always have the value `undefined`.
+Constants must be initialized, assigned a value, when created.  Uninitialized
+constants are a syntax error in Firefox.  In Chrome or node they will always
+have the value `undefined`.
 
 ```js
 const pi = 3.14159265359; // rounded
@@ -211,7 +239,10 @@ Try it with your name now!
 
 #### Boolean expressions
 
-A boolean expression is a comparison (e.g. `>`, `>=`, `===`) or any value interpreted as a boolean.  We'll use that fact when we get to flow control.  Boolean expression combine using the logical and `&&` and logical `||` operators.
+A boolean expression is a comparison (e.g. `>`, `>=`, `===`) or any value
+interpreted as a boolean.  We'll use that fact when we get to flow control.
+Boolean expression combine using the logical and `&&` and logical `||`
+operators.
 
 ```js
 let height = 62;
@@ -222,8 +253,8 @@ height > 72;
 height > 72 && height < 78;
 ```
 
-The logical operators 'short circuit', which means they stop evaluating operands as soon as the expression is `false` for `&&`, or true for `||`.
-
+The logical operators 'short circuit', which means they stop evaluating operands
+as soon as the expression is `false` for `&&`, or true for `||`.
 
 ##### truthy and falsy
 
@@ -231,14 +262,15 @@ What do you think of when you hear 'truthy' and 'falsy'?
 
 The falsy list (everything else in JavaScript is truthy),
 
-- `false`
-- `undefined`
-- `null`
-- `0 // and -0`
-- `NaN`
-- `''  // and "" - the empty string`
+-   `false`
+-   `undefined`
+-   `null`
+-   `0 // and -0`
+-   `NaN`
+-   `''  // and "" - the empty string`
 
-Note:  The negation of a truthy value is `false` and the negation of a falsy value is `true`.
+Note:  The negation of a truthy value is `false` and the negation of a falsy
+value is `true`.
 
 ```js
 let truthy;
@@ -251,15 +283,19 @@ falsy = 0;
 
 #### Type conversions
 
-The unary `+` operator attempts to convert its operand to a Number.  If unsuccessful the result is `NaN`.
+The unary `+` operator attempts to convert its operand to a Number.  If
+unsuccessful the result is `NaN`.
 
-If either operand of the binary `+` operator is a string the operator converts the other operator to a string.  Some results of this conversion are more useful than others.
+If either operand of the binary `+` operator is a string the operator converts
+the other operator to a string.  Some results of this conversion are more useful
+than others.
 
 Note the different between `3 + 5 + ' times';` and `'times ' + 3 + 5`;?
 
 The unary `!` operator converts its operand to a boolean value.
 
-For non-strict-equality comparisons with numbers, boolean values are coerced to `1` or `0` (from `true` or `false` respectively).
+For non-strict-equality comparisons with numbers, boolean values are coerced to
+`1` or `0` (from `true` or `false` respectively).
 
 ### Flow Control
 
@@ -327,15 +363,15 @@ for (let i = 0; i < 10; i++) {
 
 ## Additional Resources
 
-See the following sections at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+See the following sections at
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide>
 
-- Grammar and types
-- Control flow and error handling
-- Loops and iteration
-- Expressions and operators
-- Number and dates
-- Text formatting
-
+-   Grammar and types
+-   Control flow and error handling
+-   Loops and iteration
+-   Expressions and operators
+-   Number and dates
+-   Text formatting
 
 ## [License](LICENSE)
 
