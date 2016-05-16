@@ -84,7 +84,7 @@ runner to evaluate expressions and explore JavaScript features.
 -   **P**rint
 -   **L**oop
 
-#### Code Along: Intro into Node and Variables
+#### Code Along: Declare Variables
 
 ```bash
 $ node
