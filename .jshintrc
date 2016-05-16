@@ -1,0 +1,15 @@
+{
+  "curly": true,
+  "devel": true,
+  "eqeqeq": true,
+  "esversion": 6,
+  "latedef": true,
+  "mocha": true,
+  "noarg": true,
+  "node": true,
+  "nonew": true,
+  "strict": "global",
+  "undef": true,
+  "unused": true,
+  "varstmt": true
+}

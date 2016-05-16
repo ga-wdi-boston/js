@@ -1,0 +1,6 @@
+{
+  "default": ["nag"],
+  "nag": ["jshint", "jsonlint:all", "jscs:status"],
+  "reformat": ["jscs:write"],
+  "test": ["mochaTest:test"]
+}

@@ -1,0 +1,23 @@
+{
+  "plugins": {
+    "lint": {
+      "blockquote-indentation": "2",
+      "checkbox-character-style": {
+        "checked": "x",
+        "unchecked": " "
+      },
+      "code-block-style": "fenced",
+      "heading-style": "atx",
+      "list-item-spacing": false,
+      "no-html": false,
+      "no-shortcut-reference-link": true,
+      "no-undefined-references": true,
+      "ordered-list-marker-value": "one",
+      "rule-style": "---",
+      "unordered-list-marker-style": "-"
+    }
+  },
+  "settings": {
+    "commonmark": true
+  }
+}
