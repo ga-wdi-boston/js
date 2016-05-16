@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "readline-sync": "^1.2.19"
+  },
   "name": "ga-wdi-boston-node-template",
   "version": "0.0.1",
   "private": true,
