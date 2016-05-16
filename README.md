@@ -302,6 +302,17 @@ The unary `!` operator converts its operand to a boolean value.
 For non-strict-equality comparisons with numbers, boolean values are coerced to
 `1` or `0` (from `true` or `false` respectively).
 
+#### Printing to the Console
+
+As developers, we often want to take a look at the
+inner workings of processing and just get a read on what variables store which
+values at a specific time while our code is running. To do this we type
+`console.log("Whatever we want to print out to the console.")`
+
+It's an extremely effective tool that often gets pulled out before
+production, but can help give you an idea of what should be being returned, and
+a good point of reference for debugging.
+
 ### Flow Control
 
 Remember how we used node as a REPL earlier? It actually has a completely
@@ -398,6 +409,17 @@ for (let i = 0; i < 10; i++) {
 
   Save. Think about what you expect this file to produce to the terminal...
   Now type `node five.js` and hit ENTER.
+
+#### Lab: Build a Script Yourself
+
+Try building your own script in the /lib directory titled `guessMyAge.js`. Have
+this script ask the user their age, and if they're older than 90 print to the
+console "You old fart!" If they're under the age of 10 print "Why are you on a
+computer? Go outside!!" If they're between 10 and 90, print "How boring...".
+
+If you finish early, challenge yourself by designing your own script that runs
+something using two or more examples of flow control we've introduced today!
+Save it as it in `bonusChallenge.js`
 
 ## Additional Resources
 
