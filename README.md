@@ -307,10 +307,10 @@ For non-strict-equality comparisons with numbers, boolean values are coerced to
 As developers, we often want to take a look at the
 inner workings of processing and just get a read on what variables store which
 values at a specific time while our code is running. To do this we type
-`console.log("Whatever we want to print out to the console.")`
+`console.log("Whatever we want to print out to the console.")`.
 
 It's an extremely effective tool that often gets pulled out before
-production, but can help give you an idea of what should be being returned, and
+production, but can help give you an idea of what should be returned, and
 a good point of reference for debugging.
 
 ### Flow Control
@@ -401,7 +401,7 @@ Nesting conditionals in loops:
 
 ```js
 for (let i = 0; i < 10; i++) {
-  if (i===5) {
+  if (i === 5) {
     console.log('five!');
   }
 }
