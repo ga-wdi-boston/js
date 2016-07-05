@@ -261,11 +261,11 @@ height > 72 && height < 78;
 The logical operators 'short circuit', which means they stop evaluating operands
 as soon as the expression is `false` for `&&`, or true for `||`.
 
-##### truthy and falsy
+##### Truthy and Falsy Values
 
 What do you think of when you hear 'truthy' and 'falsy'?
 
-The falsy list (everything else in JavaScript is truthy),
+All values in JS are inherently truthy with the exception of these 6 values:
 
 -   `false`
 -   `undefined`
