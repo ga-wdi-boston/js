@@ -26,12 +26,12 @@ By the end of this lesson, students should be able to:
 -   Evaluate simple JavaScript by inspection
 -   Write simple scripts that use flow control
 
-## To start
+## Preparation
 
--   Fork this repository (link in slack).
--   Change to the directory `~/wdi/training`.
--   Clone the fork.
--   `cd` into the cloned repository
+1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+    this repository.
+1.  Create a new branch, `training`, for your work.
+1.  Install dependencies with `npm install`.
 
 Then:
 
