@@ -93,13 +93,13 @@ $ node
 ```
 
 ```js
-> name;
+> bornOn;
 ```
 
 Variables need to be declared.
 
 ```js
-> let name;
+> let bornOn;
 ```
 
 Variables name storage for the value they contain.  Because JavaScript is a
@@ -159,18 +159,18 @@ Assignment changes the value of a variable.
 ```js
 let height;
 height;
-height = 77;
+height = 67;
 height;
 let name;
-name = 'Antony';
+name = 'Lauren';
 name;
 ```
 
 Remember: JavaScript variables are untyped.
 
 ```js
-name = 'Antony';
-name = 45;
+name = 'Lauren';
+name = 26;
 ```
 
 Although it doesn't cause an error, avoid confusing code like the above.
@@ -235,8 +235,8 @@ i;
 let givenName;
 let surname;
 let fullName;
-givenName = 'Antony';
-surname = 'Donovan';
+givenName = 'Lauren';
+surname = 'Fazah';
 fullName = givenName + ' ' + surname;
 ```
 
@@ -324,8 +324,9 @@ command from your terminal.
 
 `touch greeter.js psychic.js forLoop.js five.js`
 
-The `if` statement:
-  Open `greeter.js` and we'll type some code in...
+#### `if` Statements
+
+Open `greeter.js` and we'll type some code in...
 
 ```js
 'use strict';
@@ -333,10 +334,12 @@ The `if` statement:
 const ask = require('../lib/ask.js');
 
 let name = ask("What's your name? ");
-if (name === 'Antony') {
-  console.log('Hi, Antony!');
+if (name === 'Lauren') {
+  console.log('Hi, Lauren!');
 } else if (name === 'Jason') {
   console.log('Hi, Jason!');
+} else if (name === 'Antony') {
+  console.log('Hi, Antony!');
 } else {
   console.log('Hi, stranger.');
 }
@@ -348,10 +351,11 @@ Type your name and hit ENTER.
 
 Press the UP arrow on your keyboard to reload the previous line OR type
 `node greeter.js` again.
-Type `Antony` and hit ENTER.
+Type `Lauren` and hit ENTER.
 
-The `while` loop:
-  Now go to `psychic.js`.
+#### `while` Loops
+
+Now go to `psychic.js`
 
 ```js
 'use strict';
@@ -368,13 +372,13 @@ while (answer !== 'Antony') {
 console.log('You got it in ' + count + ' tries!');
 ```
 
-  Save this file and return to your terminal.
-  Type `node psychic.js`
-  Type your name and hit ENTER.
-  Try your neighbors name.
-  Try `Antony`.
+Save this file and return to your terminal.
+Type `node psychic.js`
+Type your name and hit ENTER.
+Try your neighbor's name.
+Try `Antony`.
 
-The `for` loop:
+#### `for` Loops
 
 ```js
 for (let i = 0; i < 10; i++) {
@@ -382,11 +386,11 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-  Save this file and return to your terminal.
-  Think about what you expect this file to produce to the terminal...
-  Now type `node forLoop.js` and hit ENTER.
+Save this file and return to your terminal.
+Think about what you expect this file to produce to the terminal...
+Now type `node forLoop.js` and hit ENTER.
 
-which is - almost - equivalent to:
+which is _almost_ equivalent to:
 
 ```js
 let i = 0;
@@ -403,6 +407,8 @@ Nesting conditionals in loops:
 for (let i = 0; i < 10; i++) {
   if (i === 5) {
     console.log('five!');
+  } else {
+    console.log('nah');
   }
 }
 ```
@@ -415,11 +421,14 @@ for (let i = 0; i < 10; i++) {
 Try building your own script in the /lib directory titled `guessMyAge.js`. Have
 this script ask the user their age, and if they're older than 90 print to the
 console "You old fart!" If they're under the age of 10 print "Why are you on a
-computer? Go outside!!" If they're between 10 and 90, print "How boring...".
+computer? Go outside!" If they're between 10 and 90, print "How boring...".
 
 If you finish early, challenge yourself by designing your own script that runs
 something using two or more examples of flow control we've introduced today!
 Save it as it in `bonusChallenge.js`
+
+Note: refer to the beginning lines of our `greeter.js` code to enable working
+with user input.
 
 ## Additional Resources
 
