@@ -39,7 +39,6 @@ Then:
 git branch training
 git checkout training
 atom .
-npm install
 ```
 
 Note: when creating and then immediately switching to a branch you can use
