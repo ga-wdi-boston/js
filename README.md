@@ -158,18 +158,18 @@ Assignment changes the value of a variable.
 ```js
 let height;
 height;
-height = 67;
+height = 72;
 height;
 let name;
-name = 'Lauren';
+name = 'Brian';
 name;
 ```
 
 Remember: JavaScript variables are untyped.
 
 ```js
-name = 'Lauren';
-name = 26;
+name = 'Brian';
+name = 29;
 ```
 
 Although it doesn't cause an error, avoid confusing code like the above.
@@ -234,8 +234,8 @@ i;
 let givenName;
 let surname;
 let fullName;
-givenName = 'Lauren';
-surname = 'Fazah';
+givenName = 'Brian';
+surname = 'Berzellini';
 fullName = givenName + ' ' + surname;
 ```
 
@@ -249,7 +249,7 @@ Boolean expression combine using the logical and `&&` and logical `||`
 operators.
 
 ```js
-let height = 62;
+let height = 72;
 height === 60;
 height > 72;
 height = 76;
@@ -333,12 +333,12 @@ Open `greeter.js` and we'll type some code in...
 const ask = require('../lib/ask.js');
 
 let name = ask("What's your name? ");
-if (name === 'Lauren') {
-  console.log('Hi, Lauren!');
-} else if (name === 'Jason') {
-  console.log('Hi, Jason!');
-} else if (name === 'Antony') {
-  console.log('Hi, Antony!');
+if (name === 'Brian') {
+  console.log('Hi, Brian!');
+} else if (name === 'Jeff') {
+  console.log('Hi, Jeff!');
+} else if (name === 'Chris') {
+  console.log('Hi, Chris!');
 } else {
   console.log('Hi, stranger.');
 }
@@ -364,7 +364,7 @@ const ask = require('../lib/ask.js');
 let count = 0;
 let answer = '';
 
-while (answer !== 'Antony') {
+while (answer !== 'Jeff') {
   answer = ask('Guess my name? ');
   count = count + 1;
 }
