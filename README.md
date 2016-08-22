@@ -132,7 +132,7 @@ from higher to lower precedence.
 | multiplication, division, modulo                     | left-to-right | `* / %`                                     |
 | addition, subtraction                                | left-to-right | `+ -`                                       |
 | relation, instance                                   | left-to-right | `<` `<=` `>` `>=` `instanceof`              |
-| strict equality                                      | left-to-right | `===` `!===`                                |
+| strict equality                                      | left-to-right | `===` `!==`                                |
 | logical and                                          | left-to-right | `&&`                                        |
 | logical or                                           | left-to-right | `||`                                        |
 | conditional                                          | right-to-left | `?:`                                        |
