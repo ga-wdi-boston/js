@@ -6,7 +6,7 @@ const ask = require('../lib/ask.js');
 let count = 0;
 let answer = '';
 
-while (answer !== 'Lauren') {
+while (answer !== 'Brian') {
   answer = ask('Guess my name? ');
   count = count + 1;
 }

@@ -4,10 +4,10 @@
 const ask = require('../lib/ask.js');
 
 let name = ask('What\'s your name? ');
-if (name === 'Lauren') {
-  console.log('Hi, Lauren!');
-} else if (name === 'Antony') {
-  console.log('Hi, Antony!');
+if (name === 'Brian') {
+  console.log('Hi, Brian!');
+} else if (name === 'Jeff') {
+  console.log('Hi, Jeff!');
 } else {
   console.log('Hi, stranger.');
 }
