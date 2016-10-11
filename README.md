@@ -241,6 +241,13 @@ fullName = givenName + ' ' + surname;
 
 Try it with your name now!
 
+```js
+bornOn = '1982-09-29';
+```
+
+What happens if you don't enter the date as a string?
+
+
 #### Code Along: Boolean expressions
 
 A boolean expression is a comparison (e.g. `>`, `>=`, `===`) or any value
@@ -438,7 +445,7 @@ See the following sections at
 -   Control flow and error handling
 -   Loops and iteration
 -   Expressions and operators
--   Number and dates
+-   Number and [dates](https://en.wikipedia.org/wiki/ISO_8601)
 -   Text formatting
 
 ## [License](LICENSE)
