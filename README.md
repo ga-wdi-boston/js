@@ -269,7 +269,7 @@ All values in JS are inherently truthy with the exception of these 6 values:
 -   `false`
 -   `undefined`
 -   `null`
--   `0 // and -0`
+-   `0` and `-0`
 -   `NaN`
 -   `''  // and "" - the empty string`
 
