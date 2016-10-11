@@ -151,7 +151,7 @@ operators.
 An expression with all of the variables replaced with literals that are equal to
 the values of the variables will produce the same result.
 
-#### Assignment expressions
+#### Code Along: Assignment expressions
 
 Assignment changes the value of a variable.
 
@@ -241,7 +241,7 @@ fullName = givenName + ' ' + surname;
 
 Try it with your name now!
 
-#### Boolean expressions
+#### Code Along: Boolean expressions
 
 A boolean expression is a comparison (e.g. `>`, `>=`, `===`) or any value
 interpreted as a boolean.  We'll use that fact when we get to flow control.
@@ -285,7 +285,7 @@ falsy = 0;
 !falsy;
 ```
 
-#### Type conversions
+#### Demo: Type conversions
 
 The unary `+` operator attempts to convert its operand to a Number.  If
 unsuccessful the result is `NaN`.
@@ -312,7 +312,7 @@ It's an extremely effective tool that often gets pulled out before
 production, but can help give you an idea of what should be returned, and
 a good point of reference for debugging.
 
-### Flow Control
+### Code Along: Flow Control
 
 Remember how we used node as a REPL earlier? It actually has a completely
 different use as well--as a script runner. Let's see how that works while we
