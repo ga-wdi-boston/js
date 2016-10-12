@@ -228,6 +228,9 @@ i++;
 i;
 ```
 
+Note: `++i` and `i++` are not the same! `++i` will increment i by 1 and then
+evaluate i, whereas `i++` will evaluate i and then increment. 
+
 #### String expressions
 
 ```js
@@ -308,6 +311,17 @@ The unary `!` operator converts its operand to a boolean value.
 For non-strict-equality comparisons with numbers, boolean values are coerced to
 `1` or `0` (from `true` or `false` respectively).
 
+### Code Along: Flow Control
+
+Remember how we used node as a REPL earlier? It actually has a completely
+different use as well--as a script runner. Let's see how that works while we
+explore some examples of flow control.
+
+To start, exit your REPL using `CTRL-d` and make sure you're in the 'lib' folder. Add 3 files using the `touch`
+command from your terminal.
+
+`touch greeter.js psychic.js forLoop.js five.js`
+
 #### Printing to the Console
 
 As developers, we often want to take a look at the
@@ -318,17 +332,6 @@ values at a specific time while our code is running. To do this we type
 It's an extremely effective tool that often gets pulled out before
 production, but can help give you an idea of what should be returned, and
 a good point of reference for debugging.
-
-### Code Along: Flow Control
-
-Remember how we used node as a REPL earlier? It actually has a completely
-different use as well--as a script runner. Let's see how that works while we
-explore some examples of flow control.
-
-To start, make sure you're in the 'lib' folder and add 3 files using the `touch`
-command from your terminal.
-
-`touch greeter.js psychic.js forLoop.js five.js`
 
 #### `if` Statements
 
