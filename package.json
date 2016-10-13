@@ -1,9 +1,11 @@
 {
-  "name": "ga-wdi-boston-js-basics",
+  "name": "ga-wdi-boston.js-basics",
   "version": "0.0.1",
   "private": true,
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "readline-sync": "^1.4.4"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-as-promised": "^5.3.0",
