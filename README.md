@@ -151,7 +151,7 @@ operators.
 An expression with all of the variables replaced with literals that are equal to
 the values of the variables will produce the same result.
 
-#### Assignment expressions
+#### Code Along: Assignment expressions
 
 Assignment changes the value of a variable.
 
@@ -228,6 +228,9 @@ i++;
 i;
 ```
 
+Note: `++i` and `i++` are not the same! `++i` will increment i by 1 and then
+evaluate i, whereas `i++` will evaluate i and then increment. 
+
 #### String expressions
 
 ```js
@@ -241,7 +244,14 @@ fullName = givenName + ' ' + surname;
 
 Try it with your name now!
 
-#### Boolean expressions
+```js
+bornOn = '1982-09-29';
+```
+
+What happens if you don't enter the date as a string?
+
+
+#### Code Along: Boolean expressions
 
 A boolean expression is a comparison (e.g. `>`, `>=`, `===`) or any value
 interpreted as a boolean.  We'll use that fact when we get to flow control.
@@ -269,7 +279,7 @@ All values in JS are inherently truthy with the exception of these 6 values:
 -   `false`
 -   `undefined`
 -   `null`
--   `0 // and -0`
+-   `0` and `-0`
 -   `NaN`
 -   `''  // and "" - the empty string`
 
@@ -285,7 +295,7 @@ falsy = 0;
 !falsy;
 ```
 
-#### Type conversions
+#### Demo: Type conversions
 
 The unary `+` operator attempts to convert its operand to a Number.  If
 unsuccessful the result is `NaN`.
@@ -301,6 +311,17 @@ The unary `!` operator converts its operand to a boolean value.
 For non-strict-equality comparisons with numbers, boolean values are coerced to
 `1` or `0` (from `true` or `false` respectively).
 
+### Code Along: Flow Control
+
+Remember how we used node as a REPL earlier? It actually has a completely
+different use as well--as a script runner. Let's see how that works while we
+explore some examples of flow control.
+
+To start, exit your REPL using `CTRL-d` and make sure you're in the 'lib' folder. Add 3 files using the `touch`
+command from your terminal.
+
+`touch greeter.js psychic.js forLoop.js five.js`
+
 #### Printing to the Console
 
 As developers, we often want to take a look at the
@@ -311,17 +332,6 @@ values at a specific time while our code is running. To do this we type
 It's an extremely effective tool that often gets pulled out before
 production, but can help give you an idea of what should be returned, and
 a good point of reference for debugging.
-
-### Flow Control
-
-Remember how we used node as a REPL earlier? It actually has a completely
-different use as well--as a script runner. Let's see how that works while we
-explore some examples of flow control.
-
-To start, make sure you're in the 'lib' folder and add 3 files using the `touch`
-command from your terminal.
-
-`touch greeter.js psychic.js forLoop.js five.js`
 
 #### `if` Statements
 
@@ -438,7 +448,7 @@ See the following sections at
 -   Control flow and error handling
 -   Loops and iteration
 -   Expressions and operators
--   Number and dates
+-   Number and [dates](https://en.wikipedia.org/wiki/ISO_8601)
 -   Text formatting
 
 ## [License](LICENSE)
