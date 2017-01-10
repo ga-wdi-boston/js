@@ -320,7 +320,7 @@ explore some examples of flow control.
 To start, exit your REPL using `CTRL-d` and make sure you're in the 'lib' folder. Add 3 files using the `touch`
 command from your terminal.
 
-`touch greeter.js psychic.js forLoop.js five.js`
+`touch greeter.js psychic.js forLoop.js`
 
 #### Printing to the Console
 
@@ -410,7 +410,6 @@ while (i < 10) {
 ```
 
 Nesting conditionals in loops:
-  Now go to `five.js`.
 
 ```js
 for (let i = 0; i < 10; i++) {
@@ -422,8 +421,8 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-  Save. Think about what you expect this file to produce to the terminal...
-  Now type `node five.js` and hit ENTER.
+Save. Think about what you expect this file to produce to the terminal...
+What do we type in the terminal to run our code?
 
 #### Lab: Build a Script Yourself
 
