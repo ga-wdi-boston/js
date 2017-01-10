@@ -51,7 +51,7 @@ Note: when creating and then immediately switching to a branch you can use
 ES5 has 5 primitive [types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures): `Number`, `String`, `Boolean`, `null`, and `undefined`.
 
 | Type      | Examples                        |
-|-----------|---------------------------------|
+|:----------|:--------------------------------|
 | Number    | `-0`, `NaN`, `Infinity`         |
 | String    | `''`, `"The non-empty string."` |
 | Boolean   | `true`, `false`                 |
@@ -124,19 +124,19 @@ The following table lists a subset of the JavaScript
 [operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
 from higher to lower precedence.
 
-| Type                                                 | Associativity | Operators                                   |
-|------------------------------------------------------|---------------|---------------------------------------------|
-| grouping                                             | n/a           | `()`                                        |
-| postfix increment                                    | n/a           | `++` `--`                                   |
-| negation, numeric conversion, prefix increment, type | right-to-left | `!` `-` `+` `++` `--` `typeof`              |
-| multiplication, division, modulo                     | left-to-right | `* / %`                                     |
-| addition, subtraction                                | left-to-right | `+ -`                                       |
-| relation, instance                                   | left-to-right | `<` `<=` `>` `>=` `instanceof`              |
-| strict equality                                      | left-to-right | `===` `!==`                                |
-| logical and                                          | left-to-right | `&&`                                        |
-| logical or                                           | left-to-right | `||`                                        |
-| conditional                                          | right-to-left | `?:`                                        |
-| assignment                                           | right-to-left | `=` `+=` `-=` `*=` `/=` `%=`                |
+| Type                                                 | Associativity | Operators                      |
+|:-----------------------------------------------------|:--------------|:-------------------------------|
+| grouping                                             | n/a           | `()`                           |
+| postfix increment                                    | n/a           | `++` `--`                      |
+| negation, numeric conversion, prefix increment, type | right-to-left | `!` `-` `+` `++` `--` `typeof` |
+| multiplication, division, modulo                     | left-to-right | `* / %`                        |
+| addition, subtraction                                | left-to-right | `+ -`                          |
+| relation, instance                                   | left-to-right | `<` `<=` `>` `>=` `instanceof` |
+| strict equality                                      | left-to-right | `===` `!==`                    |
+| logical and                                          | left-to-right | `&&`                           |
+| logical or                                           | left-to-right | `||`                           |
+| conditional                                          | right-to-left | `?:`                           |
+| assignment                                           | right-to-left | `=` `+=` `-=` `*=` `/=` `%=`   |
 
 ### Expressions
 
@@ -229,7 +229,7 @@ i;
 ```
 
 Note: `++i` and `i++` are not the same! `++i` will increment i by 1 and then
-evaluate i, whereas `i++` will evaluate i and then increment. 
+evaluate i, whereas `i++` will evaluate i and then increment.
 
 #### String expressions
 
