@@ -10,8 +10,8 @@ Although ECMAScript 2015 ([ES2015](http://www.ecma-international.org/ecma-262/6.
 is the latest standard, adopted in June of 2015, we'll mostly focus on features
 from the [ES5](http://www.ecma-international.org/ecma-262/5.1/) standard.  Some
 of the references in this document may include descriptions of ES2015 features.
-These features will usually be denoted with `(new in ECMAScript 6)` in the main
-text or with a **flask icon** in the navigation sidebar.
+These features will usually be denoted with `(new in ECMAScript 2015)` in the
+main text or with a **flask icon** in the navigation sidebar.
 
 `let` and `const` are the primary ES2015 features introduced in this training.  In
 order to to use these features, we'll need to be in strict mode.
