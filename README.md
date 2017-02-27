@@ -287,12 +287,12 @@ Note:  The negation of a truthy value is `false` and the negation of a falsy
 value is `true`.
 
 ```js
-let truthy;
-let falsy;
-truthy = 'A non-empty string';
-falsy = 0;
-!truthy;
-!falsy;
+let truthyValue;
+let falsyValue;
+truthyValue = 'A non-empty string';
+falsyValue = 0;
+!truthyValue;
+!falsyValue;
 ```
 
 #### Demo: Type conversions
