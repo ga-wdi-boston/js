@@ -281,7 +281,7 @@ All values in JS are inherently truthy with the exception of these 6 values:
 -   `null`
 -   `0` and `-0`
 -   `NaN`
--   `''  // and "" - the empty string`
+-   `''`, `""`, and ` `` `
 
 Note:  The negation of a truthy value is `false` and the negation of a falsy
 value is `true`.
