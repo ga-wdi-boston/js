@@ -420,7 +420,7 @@ What do we type in the terminal to run our code?
 
 #### Lab: Build a Script Yourself
 
-Try building your own script in the /lib directory titled `guessMyAge.js`. Have
+Try building your own script in the ./bin directory titled `guessMyAge.js`. Have
 this script ask the user their age, and if they're older than 90 print to the
 console "You old fart!" If they're under the age of 10 print "Why are you on a
 computer? Go outside!" If they're between 10 and 90, print "How boring...".
