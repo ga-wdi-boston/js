@@ -2,14 +2,13 @@
   "name": "ga-wdi-boston.js-basics",
   "version": "0.0.1",
   "private": true,
-  "dependencies": {
-    "readline-sync": "^1.4.4"
-  },
   "license": {
     "software": "GNU GPLv3",
     "content": "CC­BY­NC­SA 4.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "readline-sync": "^1.4.4"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
