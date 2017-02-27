@@ -31,17 +31,11 @@ By the end of this lesson, students should be able to:
 1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
 1.  Create a new branch, `training`, for your work.
+1.  Switch to the new `training` branch.
 1.  Install dependencies with `npm install`.
+1.  Open the repository in Atom with `atom .`.
 
-Then:
-
-```sh
-git branch training
-git checkout training
-atom .
-```
-
-Note: when creating and then immediately switching to a branch you can use
+Note: Create and switch to a new branch at the same time with the shortcut:
 `git checkout -b <new branch name>`.
 
 ## Basics
