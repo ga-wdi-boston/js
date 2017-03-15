@@ -81,18 +81,18 @@ runner to evaluate expressions and explore JavaScript features.
 
 ```bash
 $ node
-> 'use strict';
+> 'use strict'
 >
 ```
 
 ```js
-> bornOn;
+> bornOn
 ```
 
 Variables need to be declared.
 
 ```js
-> let bornOn;
+> let bornOn
 ```
 
 Variables name storage for the value they contain.  Because JavaScript is a
@@ -150,20 +150,20 @@ the values of the variables will produce the same result.
 Assignment changes the value of a variable.
 
 ```js
-let height;
-height;
-height = 72;
-height;
-let name;
-name = 'Brian';
-name;
+let height
+height
+height = 72
+height
+let name
+name = 'Brian'
+name
 ```
 
 Remember: JavaScript variables are untyped.
 
 ```js
-name = 'Brian';
-name = 29;
+name = 'Brian'
+name = 29
 ```
 
 Although it doesn't cause an error, avoid confusing code like the above.
@@ -179,11 +179,11 @@ constants are a syntax error in Firefox.  In Chrome or node they will always
 have the value `undefined`.
 
 ```js
-const pi = 3.14159265359; // rounded
-pi;
-const e;
-e = 2.71828182846; // rounded
-e;
+const pi = 3.14159265359 // rounded
+pi
+const e
+e = 2.71828182846 // rounded
+e
 ```
 
 #### Numeric expressions
@@ -191,17 +191,17 @@ e;
 Simple calculations:
 
 ```js
-5 + 3;
-7 - 2;
-11 % 5;
+5 + 3
+7 - 2
+11 % 5
 ```
 
 Expressions with variables only change values with assignment.
 
 ```js
-height = 80;
-height - 1;
-height;
+height = 80
+height - 1
+height
 ```
 
 What will `height` be at the end of the 3 lines above?
@@ -209,17 +209,17 @@ What will `height` be at the end of the 3 lines above?
 Now let's compare some common methods of counting.
 
 ```js
-let i;
-i = 0;
-i;
-i = i + 1;
-i;
-i += 1;
-i;
-++i;
-i;
-i++;
-i;
+let i
+i = 0
+i
+i = i + 1
+i
+i += 1
+i
+++i
+i
+i++
+i
 ```
 
 Note: `++i` and `i++` are not the same! `++i` will increment i by 1 and then
@@ -228,18 +228,18 @@ evaluate i, whereas `i++` will evaluate i and then increment.
 #### String expressions
 
 ```js
-let givenName;
-let surname;
-let fullName;
-givenName = 'Brian';
-surname = 'Berzellini';
-fullName = givenName + ' ' + surname;
+let givenName
+let surname
+let fullName
+givenName = 'Brian'
+surname = 'Berzellini'
+fullName = givenName + ' ' + surname
 ```
 
 Try it with your name now!
 
 ```js
-bornOn = '1982-09-29';
+bornOn = '1982-09-29'
 ```
 
 What happens if you don't enter the date as a string?
@@ -253,12 +253,12 @@ Boolean expression combine using the logical and `&&` and logical `||`
 operators.
 
 ```js
-let height = 72;
-height === 60;
-height > 72;
-height = 76;
-height > 72;
-height > 72 && height < 78;
+let height = 72
+height === 60
+height > 72
+height = 76
+height > 72
+height > 72 && height < 78
 ```
 
 The logical operators 'short circuit', which means they stop evaluating operands
@@ -281,12 +281,12 @@ Note:  The negation of a truthy value is `false` and the negation of a falsy
 value is `true`.
 
 ```js
-let truthyValue;
-let falsyValue;
-truthyValue = 'A non-empty string';
-falsyValue = 0;
-!truthyValue;
-!falsyValue;
+let truthyValue
+let falsyValue
+truthyValue = 'A non-empty string'
+falsyValue = 0
+!truthyValue
+!falsyValue
 ```
 
 #### Demo: Type conversions
@@ -298,7 +298,7 @@ If either operand of the binary `+` operator is a string the operator converts
 the other operator to a string.  Some results of this conversion are more useful
 than others.
 
-Note the difference between `3 + 5 + ' times';` and `'times ' + 3 + 5`;?
+Note the difference between `3 + 5 + ' times'` and `'times ' + 3 + 5`?
 
 The unary `!` operator converts its operand to a boolean value.
 
@@ -332,19 +332,19 @@ a good point of reference for debugging.
 Open `greeter.js` and we'll type some code in...
 
 ```js
-'use strict';
+'use strict'
 //We'll learn about require later in the course
-const ask = require('../lib/ask.js');
+const ask = require('../lib/ask.js')
 
-let name = ask("What's your name? ");
+let name = ask("What's your name? ")
 if (name === 'Brian') {
-  console.log('Hi, Brian!');
+  console.log('Hi, Brian!')
 } else if (name === 'Jeff') {
-  console.log('Hi, Jeff!');
+  console.log('Hi, Jeff!')
 } else if (name === 'Chris') {
-  console.log('Hi, Chris!');
+  console.log('Hi, Chris!')
 } else {
-  console.log('Hi, stranger.');
+  console.log('Hi, stranger.')
 }
 ```
 
@@ -361,18 +361,18 @@ Type `Lauren` and hit ENTER.
 Now go to `psychic.js`
 
 ```js
-'use strict';
+'use strict'
 //We'll learn about require later in the course
-const ask = require('../lib/ask.js');
+const ask = require('../lib/ask.js')
 
-let count = 0;
-let answer = '';
+let count = 0
+let answer = ''
 
 while (answer !== 'Jeff') {
-  answer = ask('Guess my name? ');
-  count = count + 1;
+  answer = ask('Guess my name? ')
+  count = count + 1
 }
-console.log('You got it in ' + count + ' tries!');
+console.log('You got it in ' + count + ' tries!')
 ```
 
 Save this file and return to your terminal.
@@ -385,7 +385,7 @@ Try `Antony`.
 
 ```js
 for (let i = 0; i < 10; i++) {
-  console.log(i);
+  console.log(i)
 }
 ```
 
@@ -396,10 +396,10 @@ Now type `node forLoop.js` and hit ENTER.
 which is _almost_ equivalent to:
 
 ```js
-let i = 0;
+let i = 0
 while (i < 10) {
-  console.log(i);
-  i++;
+  console.log(i)
+  i++
 }
 ```
 
@@ -408,9 +408,9 @@ Nesting conditionals in loops:
 ```js
 for (let i = 0; i < 10; i++) {
   if (i === 5) {
-    console.log('five!');
+    console.log('five!')
   } else {
-    console.log('nah');
+    console.log('nah')
   }
 }
 ```
