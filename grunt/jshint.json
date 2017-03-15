@@ -1,8 +1,0 @@
-{
-  "all": {
-    "src": ["<%= paths.src.all %>"]
-  },
-  "options": {
-    "jshintrc": true
-  }
-}

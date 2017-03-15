@@ -1,6 +1,6 @@
-'use strict';
+'use strict'
 
-let name;
+let name
 
 // name = "Brian";
 
@@ -8,4 +8,4 @@ let name;
 
 // name = null;
 
-console.log(typeof name);
+console.log(typeof name)

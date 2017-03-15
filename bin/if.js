@@ -1,13 +1,13 @@
-'use strict';
+'use strict'
 
-//We'll learn about require later in the course
-const ask = require('../lib/ask.js');
+// We'll learn about require later in the course
+const ask = require('../lib/ask.js')
 
-let name = ask('What\'s your name? ');
+const name = ask('What\'s your name? ')
 if (name === 'Brian') {
-  console.log('Hi, Brian!');
+  console.log('Hi, Brian!')
 } else if (name === 'Jeff') {
-  console.log('Hi, Jeff!');
+  console.log('Hi, Jeff!')
 } else {
-  console.log('Hi, stranger.');
+  console.log('Hi, stranger.')
 }

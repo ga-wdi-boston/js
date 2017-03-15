@@ -1,8 +1,0 @@
-{
-  "test": {
-    "options": {
-      "quiet": false
-    },
-    "src": ["<%=  paths.src.spec %> "]
-  }
-}
