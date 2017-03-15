@@ -1,13 +1,21 @@
-'use strict';
+'use strict'
 
-let num =  1;
+const num = 1
 
-let str = "1";
+const str = '1'
 
-let bool = true;
+const bool = true
 
-let nada = null;
+const nada = null
 
-let yetToBeDefined;
+let yetToBeDefined
 
-console.log(yetToBeDefined);
+console.log('num is: ', num)
+
+console.log('str is: ', str)
+
+console.log('bool is: ', bool)
+
+console.log('nada is: ', nada)
+
+console.log(yetToBeDefined)
