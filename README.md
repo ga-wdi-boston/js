@@ -10,8 +10,8 @@ Although ECMAScript 2015 ([ES2015](http://www.ecma-international.org/ecma-262/6.
 is the latest standard, adopted in June of 2015, we'll mostly focus on features
 from the [ES5](http://www.ecma-international.org/ecma-262/5.1/) standard.  Some
 of the references in this document may include descriptions of ES2015 features.
-These features will usually be denoted with `(new in ECMAScript 6)` in the main
-text or with a **flask icon** in the navigation sidebar.
+These features will usually be denoted with `(new in ECMAScript 2015)` in the
+main text or with a **flask icon** in the navigation sidebar.
 
 `let` and `const` are the primary ES2015 features introduced in this training.  In
 order to to use these features, we'll need to be in strict mode.
@@ -31,17 +31,11 @@ By the end of this lesson, students should be able to:
 1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
 1.  Create a new branch, `training`, for your work.
+1.  Switch to the new `training` branch.
 1.  Install dependencies with `npm install`.
+1.  Open the repository in Atom with `atom .`.
 
-Then:
-
-```sh
-git branch training
-git checkout training
-atom .
-```
-
-Note: when creating and then immediately switching to a branch you can use
+Note: Create and switch to a new branch at the same time with the shortcut:
 `git checkout -b <new branch name>`.
 
 ## Basics
@@ -281,18 +275,18 @@ All values in JS are inherently truthy with the exception of these 6 values:
 -   `null`
 -   `0` and `-0`
 -   `NaN`
--   `''  // and "" - the empty string`
+-   `''`, `""`, and ` `` `
 
 Note:  The negation of a truthy value is `false` and the negation of a falsy
 value is `true`.
 
 ```js
-let truthy;
-let falsy;
-truthy = 'A non-empty string';
-falsy = 0;
-!truthy;
-!falsy;
+let truthyValue;
+let falsyValue;
+truthyValue = 'A non-empty string';
+falsyValue = 0;
+!truthyValue;
+!falsyValue;
 ```
 
 #### Demo: Type conversions
@@ -426,7 +420,7 @@ What do we type in the terminal to run our code?
 
 #### Lab: Build a Script Yourself
 
-Try building your own script in the /lib directory titled `guessMyAge.js`. Have
+Try building your own script in the ./bin directory titled `guessMyAge.js`. Have
 this script ask the user their age, and if they're older than 90 print to the
 console "You old fart!" If they're under the age of 10 print "Why are you on a
 computer? Go outside!" If they're between 10 and 90, print "How boring...".
