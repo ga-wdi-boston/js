@@ -1,0 +1,5 @@
+{
+  "options": {
+  },
+  "all": ["<%=  paths.src.spec %> "]
+}
