@@ -6,16 +6,6 @@
 
 A review of many of the building blocks of JavaScript.
 
-Although ECMAScript 2015 ([ES2015](http://www.ecma-international.org/ecma-262/6.0/))
-is the latest standard, adopted in June of 2015, we'll mostly focus on features
-from the [ES5](http://www.ecma-international.org/ecma-262/5.1/) standard.  Some
-of the references in this document may include descriptions of ES2015 features.
-These features will usually be denoted with `(new in ECMAScript 2015)` in the
-main text or with a **flask icon** in the navigation sidebar.
-
-`let` and `const` are the primary ES2015 features introduced in this training.  In
-order to to use these features, we'll need to be in strict mode.
-
 ## Objectives
 
 By the end of this lesson, students should be able to:
@@ -175,8 +165,17 @@ sitting next to you in it. Now change it to someone else in the room!
 ##### Constants
 
 Constants must be initialized, assigned a value, when created.  Uninitialized
-constants are a syntax error in Firefox.  In Chrome or node they will always
-have the value `undefined`.
+constants are a syntax error.
+
+```sh
+$ node
+> const uninitialized
+const uninitialized
+      ^^^^^^^^^^^^^
+SyntaxError: Missing initializer in const declaration
+
+>
+```
 
 ```js
 const pi = 3.14159265359 // rounded
@@ -333,10 +332,8 @@ Open `greeter.js` and we'll type some code in...
 
 ```js
 'use strict'
-//We'll learn about require later in the course
-const ask = require('../lib/ask.js')
-
-let name = ask("What's your name? ")
+// We'll learn about process.argv later in the course
+const name = process.argv[2]
 if (name === 'Brian') {
   console.log('Hi, Brian!')
 } else if (name === 'Jeff') {
@@ -349,12 +346,12 @@ if (name === 'Brian') {
 ```
 
 Save this file and return to your terminal.
-Type `node greeter.js`
+Type `node greeter.js Brian`
 Type your name and hit ENTER.
 
-Press the UP arrow on your keyboard to reload the previous line OR type
-`node greeter.js` again.
-Type `Lauren` and hit ENTER.
+Press the UP arrow on your keyboard to reload the previous line and change
+'Brian' to `Lauren` OR type `node greeter.js Lauren`. and press `return`
+(`enter`).
 
 #### `while` Loops
 

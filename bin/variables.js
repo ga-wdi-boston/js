@@ -2,10 +2,12 @@
 
 let name
 
-// name = "Brian";
+// name = "Brian"
 
-// name = "Chris";
+// name = "Chris"
 
-// name = null;
+console.log(typeof name)
+
+// name = null
 
 console.log(typeof name)

@@ -1,9 +1,9 @@
+#!/usr/bin/env node
 'use strict'
 
-// We'll learn about require later in the course
-const ask = require('../lib/ask.js')
+// We'll learn about process.argv later in the course
+const name = process.argv[2] || ''
 
-const name = ask('What\'s your name? ')
 if (name === 'Brian') {
   console.log('Hi, Brian!')
 } else if (name === 'Jeff') {
