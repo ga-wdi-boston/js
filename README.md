@@ -128,7 +128,7 @@ An expression is a combination of literals, variables, operators, function
 invocations and sub-expressions that are interpreted and produce a value.  Not
 all such combinations produce _sensible_ results.
 
-The simplest expression is a variable or literal followed by a semicolon. More
+The simplest expression is a variable or literal. More
 complicated expressions are formed by combining simpler expressions using
 operators.
 
