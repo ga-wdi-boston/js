@@ -372,6 +372,16 @@ while (answer !== 'Jeff') {
 console.log('You got it in ' + count + ' tries!')
 ```
 
+####String Interpollation
+
+You may have noticed that in the above sentence, we split the string in order to display the result of the count variable. The combination of a string and a variable to the console is called string interpollation. Another way to produce this interpollation is to write it as such:
+
+```
+console.log(`You got it in ${count} tries!`)
+```
+
+This method of interpollating is called Template Strings. You may find this way to be easier, since it does not require us to break up the string. Note: Make sure you are using backticks instead of single or double quotes.
+
 Save this file and return to your terminal.
 Type `node psychic.js`
 Type your name and hit ENTER.
