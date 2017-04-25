@@ -205,11 +205,21 @@ e
 Simple calculations:
 
 <!-- start code block file="snippets/numerics1.js" -->
+```js
+5 + 3
+7 - 2
+11 % 5
+```
 <!-- end code block -->
 
 Expressions with variables only change values with assignment.
 
 <!-- start code block file="snippets/numerics2.js" -->
+```js
+height = 80
+height - 1
+height
+```
 <!-- end code block -->
 
 What will `height` be at the end of the 3 lines above?
@@ -217,6 +227,19 @@ What will `height` be at the end of the 3 lines above?
 Now let's compare some common methods of counting.
 
 <!-- start code block file="snippets/numerics3.js" -->
+```js
+let i
+i = 0
+i
+i = i + 1
+i
+i += 1
+i
+++i
+i
+i++
+i
+```
 <!-- end code block -->
 
 Note: `++i` and `i++` are not the same! `++i` will increment i by 1 and then
@@ -225,11 +248,22 @@ evaluate i, whereas `i++` will evaluate i and then increment.
 #### String expressions
 
 <!-- start code block file="snippets/strings1.js" -->
+```js
+let givenName
+let surname
+let fullName
+givenName = 'Brian'
+surname = 'Berzellini'
+fullName = givenName + ' ' + surname
+```
 <!-- end code block -->
 
 Try it with your name now!
 
 <!-- start code block file="snippets/strings2.js" -->
+```js
+bornOn = '1982-09-29'
+```
 <!-- end code block -->
 
 What happens if you don't enter the date as a string?
@@ -242,14 +276,8 @@ interpreted as a boolean.  We'll use that fact when we get to flow control.
 Boolean expression combine using the logical and `&&` and logical `||`
 operators.
 
-```js
-let height = 72
-height === 60
-height > 72
-height = 76
-height > 72
-height > 72 && height < 78
-```
+<!-- start code block file="snippets/boolean1.js" -->
+<!-- end code block -->
 
 The logical operators 'short circuit', which means they stop evaluating operands
 as soon as the expression is `false` for `&&`, or true for `||`.
@@ -270,14 +298,8 @@ All values in JS are inherently truthy with the exception of these 6 values:
 Note:  The negation of a truthy value is `false` and the negation of a falsy
 value is `true`.
 
-```js
-let truthyValue
-let falsyValue
-truthyValue = 'A non-empty string'
-falsyValue = 0
-!truthyValue
-!falsyValue
-```
+<!-- start code block file="snippets/boolean2.js" -->
+<!-- end code block -->
 
 #### Demo: Type conversions
 

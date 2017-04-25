@@ -276,14 +276,16 @@ interpreted as a boolean.  We'll use that fact when we get to flow control.
 Boolean expression combine using the logical and `&&` and logical `||`
 operators.
 
+<!-- start code block file="snippets/boolean1.js" -->
 ```js
 let height = 72
 height === 60
 height > 72
 height = 76
-height > 72
+height >= 72
 height > 72 && height < 78
 ```
+<!-- end code block -->
 
 The logical operators 'short circuit', which means they stop evaluating operands
 as soon as the expression is `false` for `&&`, or true for `||`.
@@ -304,6 +306,7 @@ All values in JS are inherently truthy with the exception of these 6 values:
 Note:  The negation of a truthy value is `false` and the negation of a falsy
 value is `true`.
 
+<!-- start code block file="snippets/boolean2.js" -->
 ```js
 let truthyValue
 let falsyValue
@@ -312,6 +315,7 @@ falsyValue = 0
 !truthyValue
 !falsyValue
 ```
+<!-- end code block -->
 
 #### Demo: Type conversions
 
