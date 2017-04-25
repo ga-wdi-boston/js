@@ -277,6 +277,14 @@ Boolean expression combine using the logical and `&&` and logical `||`
 operators.
 
 <!-- start code block file="snippets/boolean1.js" -->
+```js
+let height = 72
+height === 60
+height > 72
+height = 76
+height >= 72
+height > 72 && height < 78
+```
 <!-- end code block -->
 
 The logical operators 'short circuit', which means they stop evaluating operands
@@ -299,6 +307,14 @@ Note:  The negation of a truthy value is `false` and the negation of a falsy
 value is `true`.
 
 <!-- start code block file="snippets/boolean2.js" -->
+```js
+let truthyValue
+let falsyValue
+truthyValue = 'A non-empty string'
+falsyValue = 0
+!truthyValue
+!falsyValue
+```
 <!-- end code block -->
 
 #### Demo: Type conversions
@@ -341,115 +357,77 @@ a good point of reference for debugging.
 
 #### `if` Statements
 
-Open `greeter.js` and we'll type some code in...
+Open `ifStatement.js` and we'll type some code in...
 
-```js
-'use strict'
-// We'll learn about process.argv later in the course
-const name = process.argv[2]
-if (name === 'Brian') {
-  console.log('Hi, Brian!')
-} else if (name === 'Jeff') {
-  console.log('Hi, Jeff!')
-} else if (name === 'Chris') {
-  console.log('Hi, Chris!')
-} else {
-  console.log('Hi, stranger.')
-}
-```
+<!-- start code block file="snippets/conditionals1.js" -->
+<!-- end code block -->
 
 Save this file and return to your terminal.
-Type `node greeter.js Brian`
-Type your name and hit ENTER.
+Type `node ifStatement.js Brian`
 
 Press the UP arrow on your keyboard to reload the previous line and change
-'Brian' to `Lauren` OR type `node greeter.js Lauren`. and press `return`
+`Brian` to `Lauren` OR type `node ifStatement.js Lauren`. and press `return`
 (`enter`).
 
 #### `while` Loops
 
-Now go to `psychic.js`
-
-```js
-'use strict'
-//We'll learn about require later in the course
-const ask = require('../lib/ask.js')
-
-let count = 0
-let answer = ''
-
-while (answer !== 'Jeff') {
-  answer = ask('Guess my name? ')
-  count = count + 1
-}
-console.log('You got it in ' + count + ' tries!')
-```
-
-####String Interpolation
-
-You may have noticed that in the above sentence, we split the string in order to display the result of the count variable. The combination of a string and a variable is called string interpolation. Another way to produce this interpolation is to write it as such:
-
-```
-console.log(`You got it in ${count} tries!`)
-```
-
-This method of interpolating is called Template Strings. You may find this way to be easier, since it does not require us to break up the string. Note: Make sure you are using backticks instead of single or double quotes.
-
+Open `whileLoop.js` and we'll type some code in...
+<!-- start code block file="snippets/conditionals2.js" -->
+<!-- end code block -->
 Save this file and return to your terminal.
-Type `node psychic.js`
-Type your name and hit ENTER.
-Try your neighbor's name.
-Try `Antony`.
+Type `node whileLoop.js 1`
+
+Press the UP arrow on your keyboard to reload the previous line and change
+`1` to `5` OR type `node whileLoop.js 5`. and press `return`
+(`enter`).
+
+Now let's look at a more advanced example of conditions and loops `bin/guess.js`
+In your terminal, type `node bin/guess.js Mike`
+Type `Stacey`
+Type `Brian`
+What results do you get?
+
+#### String Interpolation
+
+You may have noticed that in `bin/guess.js`, we used the variable `answer` in order to display the result of the user's input. The combination of a string and a variable is called string interpolation. To produce this interpolation is to write it as such:
+<!-- start code block file="snippets/stringInterpolation1.js" -->
+<!-- end code block -->
+This method of interpolating is called Template Strings.
+Note: Make sure you are using backticks instead of single or double quotes.
 
 #### `for` Loops
-
-```js
-for (let i = 0; i < 10; i++) {
-  console.log(i)
-}
-```
+Open `forLoop.js` and we'll type some code in...
+<!-- start code block file="snippets/loops1.js" -->
+<!-- end code block -->
 
 Save this file and return to your terminal.
 Think about what you expect this file to produce to the terminal...
 Now type `node forLoop.js` and hit ENTER.
 
 which is _almost_ equivalent to:
-
-```js
-let i = 0
-while (i < 10) {
-  console.log(i)
-  i++
-}
-```
+<!-- start code block file="snippets/loops2.js" -->
+<!-- end code block -->
 
 Nesting conditionals in loops:
-
-```js
-for (let i = 0; i < 10; i++) {
-  if (i === 5) {
-    console.log('five!')
-  } else {
-    console.log('nah')
-  }
-}
-```
+<!-- start code block file="snippets/loops3.js" -->
+<!-- end code block -->
 
 Save. Think about what you expect this file to produce to the terminal...
 What do we type in the terminal to run our code?
 
 #### Lab: Build a Script Yourself
 
-Try building your own script in the ./bin directory titled `guessMyAge.js`. Have
+Try building your own script in the file titled `lib/guessMyAge.js`. Have
 this script ask the user their age, and if they're older than 90 print to the
 console "You old fart!" If they're under the age of 10 print "Why are you on a
 computer? Go outside!" If they're between 10 and 90, print "How boring...".
+You should be able to run the file like `node lib/guessMyAge.js 100`.
 
 If you finish early, challenge yourself by designing your own script that runs
 something using two or more examples of flow control we've introduced today!
 Save it as it in `bonusChallenge.js`
 
-Note: refer to the beginning lines of our `greeter.js` code to enable working
+Note: refer to the beginning lines of our `lib/ifStatement.js` code to enable working
 with user input.
 
 ## Additional Resources
