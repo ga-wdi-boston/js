@@ -24,6 +24,7 @@ rl.on('line', function (answer) {
     rl.close()
   } else {
     console.log(`Sorry, your guess '${answer}', isn't correct.`)
+    rl.prompt()
   }
 })
 .on('close', function () {
