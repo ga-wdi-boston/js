@@ -85,9 +85,6 @@ The first line we will run in our Node.js REPL is to `use strict`
 
 Variables need to be declared.
 <!-- start code block file="snippets/declareVariables2.js" -->
-```js
-let bornOn
-```
 <!-- end code block -->
 
 Variables name storage for the value they contain.  Because JavaScript is a
