@@ -85,6 +85,9 @@ The first line we will run in our Node.js REPL is to `use strict`
 
 Variables need to be declared.
 <!-- start code block file="snippets/declareVariables2.js" -->
+```js
+let bornOn
+```
 <!-- end code block -->
 
 Variables name storage for the value they contain.  Because JavaScript is a
@@ -147,22 +150,13 @@ the values of the variables will produce the same result.
 
 Assignment changes the value of a variable.
 
-```js
-let height
-height
-height = 72
-height
-let name
-name = 'Brian'
-name
-```
+<!-- start code block file="snippets/assignVariables1.js" -->
+<!-- end code block -->
 
 Remember: JavaScript variables are untyped.
 
-```js
-name = 'Brian'
-name = 29
-```
+<!-- start code block file="snippets/assignVariables2.js" -->
+<!-- end code block -->
 
 Although it doesn't cause an error, avoid confusing code like the above.
 
@@ -175,23 +169,11 @@ sitting next to you in it. Now change it to someone else in the room!
 Constants must be initialized, assigned a value, when created.  Uninitialized
 constants are a syntax error.
 
-```sh
-$ node
-> const uninitialized
-const uninitialized
-      ^^^^^^^^^^^^^
-SyntaxError: Missing initializer in const declaration
+<!-- start code block file="snippets/constants1.js" -->
+<!-- end code block -->
 
->
-```
-
-```js
-const pi = 3.14159265359 // rounded
-pi
-const e
-e = 2.71828182846 // rounded
-e
-```
+<!-- start code block file="snippets/constants2.js" -->
+<!-- end code block -->
 
 #### Numeric expressions
 

@@ -150,6 +150,7 @@ the values of the variables will produce the same result.
 
 Assignment changes the value of a variable.
 
+<!-- start code block file="snippets/assignVariables1.js" -->
 ```js
 let height
 height
@@ -159,13 +160,16 @@ let name
 name = 'Brian'
 name
 ```
+<!-- end code block -->
 
 Remember: JavaScript variables are untyped.
 
+<!-- start code block file="snippets/assignVariables2.js" -->
 ```js
 name = 'Brian'
 name = 29
 ```
+<!-- end code block -->
 
 Although it doesn't cause an error, avoid confusing code like the above.
 
@@ -178,23 +182,23 @@ sitting next to you in it. Now change it to someone else in the room!
 Constants must be initialized, assigned a value, when created.  Uninitialized
 constants are a syntax error.
 
-```sh
-$ node
-> const uninitialized
-const uninitialized
-      ^^^^^^^^^^^^^
-SyntaxError: Missing initializer in const declaration
-
->
+<!-- start code block file="snippets/constants1.js" -->
+```js
+const variableOne
+// const variableOne
+//      ^^^^^^^^^^^^^
+// SyntaxError: Missing initializer in const declaration
 ```
+<!-- end code block -->
 
+<!-- start code block file="snippets/constants2.js" -->
 ```js
 const pi = 3.14159265359 // rounded
 pi
-const e
-e = 2.71828182846 // rounded
+const e = 2.71828182846 // rounded
 e
 ```
+<!-- end code block -->
 
 #### Numeric expressions
 
