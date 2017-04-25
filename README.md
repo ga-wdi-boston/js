@@ -204,24 +204,29 @@ e
 
 Simple calculations:
 
+<!-- start code block file="snippets/numerics1.js" -->
 ```js
 5 + 3
 7 - 2
 11 % 5
 ```
+<!-- end code block -->
 
 Expressions with variables only change values with assignment.
 
+<!-- start code block file="snippets/numerics2.js" -->
 ```js
 height = 80
 height - 1
 height
 ```
+<!-- end code block -->
 
 What will `height` be at the end of the 3 lines above?
 
 Now let's compare some common methods of counting.
 
+<!-- start code block file="snippets/numerics3.js" -->
 ```js
 let i
 i = 0
@@ -235,12 +240,14 @@ i
 i++
 i
 ```
+<!-- end code block -->
 
 Note: `++i` and `i++` are not the same! `++i` will increment i by 1 and then
 evaluate i, whereas `i++` will evaluate i and then increment.
 
 #### String expressions
 
+<!-- start code block file="snippets/strings1.js" -->
 ```js
 let givenName
 let surname
@@ -249,12 +256,15 @@ givenName = 'Brian'
 surname = 'Berzellini'
 fullName = givenName + ' ' + surname
 ```
+<!-- end code block -->
 
 Try it with your name now!
 
+<!-- start code block file="snippets/strings2.js" -->
 ```js
 bornOn = '1982-09-29'
 ```
+<!-- end code block -->
 
 What happens if you don't enter the date as a string?
 

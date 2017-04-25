@@ -151,11 +151,24 @@ the values of the variables will produce the same result.
 Assignment changes the value of a variable.
 
 <!-- start code block file="snippets/assignVariables1.js" -->
+```js
+let height
+height
+height = 72
+height
+let name
+name = 'Brian'
+name
+```
 <!-- end code block -->
 
 Remember: JavaScript variables are untyped.
 
 <!-- start code block file="snippets/assignVariables2.js" -->
+```js
+name = 'Brian'
+name = 29
+```
 <!-- end code block -->
 
 Although it doesn't cause an error, avoid confusing code like the above.
@@ -170,66 +183,54 @@ Constants must be initialized, assigned a value, when created.  Uninitialized
 constants are a syntax error.
 
 <!-- start code block file="snippets/constants1.js" -->
+```js
+const variableOne
+// const variableOne
+//      ^^^^^^^^^^^^^
+// SyntaxError: Missing initializer in const declaration
+```
 <!-- end code block -->
 
 <!-- start code block file="snippets/constants2.js" -->
+```js
+const pi = 3.14159265359 // rounded
+pi
+const e = 2.71828182846 // rounded
+e
+```
 <!-- end code block -->
 
 #### Numeric expressions
 
 Simple calculations:
 
-```js
-5 + 3
-7 - 2
-11 % 5
-```
+<!-- start code block file="snippets/numerics1.js" -->
+<!-- end code block -->
 
 Expressions with variables only change values with assignment.
 
-```js
-height = 80
-height - 1
-height
-```
+<!-- start code block file="snippets/numerics2.js" -->
+<!-- end code block -->
 
 What will `height` be at the end of the 3 lines above?
 
 Now let's compare some common methods of counting.
 
-```js
-let i
-i = 0
-i
-i = i + 1
-i
-i += 1
-i
-++i
-i
-i++
-i
-```
+<!-- start code block file="snippets/numerics3.js" -->
+<!-- end code block -->
 
 Note: `++i` and `i++` are not the same! `++i` will increment i by 1 and then
 evaluate i, whereas `i++` will evaluate i and then increment.
 
 #### String expressions
 
-```js
-let givenName
-let surname
-let fullName
-givenName = 'Brian'
-surname = 'Berzellini'
-fullName = givenName + ' ' + surname
-```
+<!-- start code block file="snippets/strings1.js" -->
+<!-- end code block -->
 
 Try it with your name now!
 
-```js
-bornOn = '1982-09-29'
-```
+<!-- start code block file="snippets/strings2.js" -->
+<!-- end code block -->
 
 What happens if you don't enter the date as a string?
 
