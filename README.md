@@ -333,7 +333,7 @@ Remember how we used node as a REPL earlier? It actually has a completely
 different use as well--as a script runner. Let's see how that works while we
 explore some examples of flow control.
 
-To start, exit your REPL using `CTRL-d` and make sure you're in the 'lib' folder. Add 3 files using the `touch`
+To start, exit your REPL using `CTRL-d` and make sure you're in the 'bin' folder. Add 3 files using the `touch`
 command from your terminal.
 
 `touch greeter.js psychic.js forLoop.js`
@@ -480,17 +480,17 @@ What do we type in the terminal to run our code?
 
 #### Lab: Build a Script Yourself
 
-Try building your own script in the file titled `lib/guessMyAge.js`. Have
+Try building your own script in the file titled `bin/guessMyAge.js`. Have
 this script ask the user their age, and if they're older than 90 print to the
 console "You old fart!" If they're under the age of 10 print "Why are you on a
 computer? Go outside!" If they're between 10 and 90, print "How boring...".
-You should be able to run the file like `node lib/guessMyAge.js 100`.
+You should be able to run the file like `node bin/guessMyAge.js 100`.
 
 If you finish early, challenge yourself by designing your own script that runs
 something using two or more examples of flow control we've introduced today!
 Save it as it in `bonusChallenge.js`
 
-Note: refer to the beginning lines of our `lib/ifStatement.js` code to enable working
+Note: refer to the beginning lines of our `bin/ifStatement.js` code to enable working
 with user input.
 
 ## Additional Resources
