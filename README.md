@@ -387,6 +387,16 @@ Ternary operators are basically a shorthand way of writing `if else` statements.
 This example might look a little bit confusing, but it is relatively simple if we break it down: First, the statement before the question mark is evaluated as being either `true` or `false`. If the statement is `true`, then the statement to the left of the colon is executed. If it is `false`, the statement to the right of the colon is executed.
 
 #### `while` Loops
+A simple while loop that logs from 0 - 9
+<!-- start code block file="snippets/loops2.js" -->
+```js
+let i = 0
+while (i < 10) {
+  console.log(i)
+  i++
+}
+```
+<!-- end code block -->
 
 Open `whileLoop.js` and we'll type some code in...
 <!-- start code block file="snippets/conditionals2.js" -->
