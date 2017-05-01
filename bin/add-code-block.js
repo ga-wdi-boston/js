@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 'use strict'
 const readline = require('readline')
 const fs = require('fs')
