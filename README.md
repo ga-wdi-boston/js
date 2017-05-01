@@ -103,12 +103,6 @@ declared but are uninitialized or unset have the value `undefined`.
 Operators come in three classes, unary, binary (the most common), and ternary
 (there is only one).
 
-Ternary operators are basically a shorthand way of writing `if else` statements. An example of a ternary operator can be found below:
-```
-3 > 4 ? console.log('Bigger') : console.log('Smaller')
-```
-This example might look a little bit confusing, but it is relatively simple if we break it down: First, the statement before the question mark is evaluated as being either `true` or `false`. If the statement is `true`, then the statement to the left of the colon is executed. If it is `false`, the statement to the right of the colon is executed.
-
 Operator precedence determines the order in which operators are evaluated.
 Operators with higher precedence are evaluated first.
 
@@ -382,6 +376,15 @@ Type `node ifStatement.js Brian`
 Press the UP arrow on your keyboard to reload the previous line and change
 `Brian` to `Lauren` OR type `node ifStatement.js Lauren`. and press `return`
 (`enter`).
+
+##### Ternary Operator
+Ternary operators are basically a shorthand way of writing `if else` statements. An example of a ternary operator can be found below:
+<!-- start code block file="snippets/ternaryOperator1.js" -->
+```js
+3 > 4 ? console.log('Bigger') : console.log('Smaller')
+```
+<!-- end code block -->
+This example might look a little bit confusing, but it is relatively simple if we break it down: First, the statement before the question mark is evaluated as being either `true` or `false`. If the statement is `true`, then the statement to the left of the colon is executed. If it is `false`, the statement to the right of the colon is executed.
 
 #### `while` Loops
 

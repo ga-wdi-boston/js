@@ -103,12 +103,6 @@ declared but are uninitialized or unset have the value `undefined`.
 Operators come in three classes, unary, binary (the most common), and ternary
 (there is only one).
 
-Ternary operators are basically a shorthand way of writing `if else` statements. An example of a ternary operator can be found below:
-```
-3 > 4 ? console.log('Bigger') : console.log('Smaller')
-```
-This example might look a little bit confusing, but it is relatively simple if we break it down: First, the statement before the question mark is evaluated as being either `true` or `false`. If the statement is `true`, then the statement to the left of the colon is executed. If it is `false`, the statement to the right of the colon is executed.
-
 Operator precedence determines the order in which operators are evaluated.
 Operators with higher precedence are evaluated first.
 
@@ -360,6 +354,20 @@ a good point of reference for debugging.
 Open `ifStatement.js` and we'll type some code in...
 
 <!-- start code block file="snippets/conditionals1.js" -->
+```js
+'use strict'
+// We'll learn about process.argv later in the course
+const name = process.argv[2]
+if (name === 'Brian') {
+  console.log('Hi, Brian!')
+} else if (name === 'Jeff') {
+  console.log('Hi, Jeff!')
+} else if (name === 'Chris') {
+  console.log('Hi, Chris!')
+} else {
+  console.log('Hi, stranger.')
+}
+```
 <!-- end code block -->
 
 Save this file and return to your terminal.
@@ -369,10 +377,28 @@ Press the UP arrow on your keyboard to reload the previous line and change
 `Brian` to `Lauren` OR type `node ifStatement.js Lauren`. and press `return`
 (`enter`).
 
+##### Ternary Operator
+Ternary operators are basically a shorthand way of writing `if else` statements. An example of a ternary operator can be found below:
+<!-- start code block file="snippets/ternaryOperator1.js" -->
+<!-- end code block -->
+This example might look a little bit confusing, but it is relatively simple if we break it down: First, the statement before the question mark is evaluated as being either `true` or `false`. If the statement is `true`, then the statement to the left of the colon is executed. If it is `false`, the statement to the right of the colon is executed.
+
 #### `while` Loops
 
 Open `whileLoop.js` and we'll type some code in...
 <!-- start code block file="snippets/conditionals2.js" -->
+```js
+'use strict'
+
+let count = process.argv[2]
+
+while (count < 5) {
+  console.log('Im inside of the loop, count is ' + count)
+  count++
+}
+
+console.log('Im outside of the loop, count is ' + count)
+```
 <!-- end code block -->
 Save this file and return to your terminal.
 Type `node whileLoop.js 1`
@@ -391,6 +417,9 @@ What results do you get?
 
 You may have noticed that in `bin/guess.js`, we used the variable `answer` in order to display the result of the user's input. The combination of a string and a variable is called string interpolation. To produce this interpolation is to write it as such:
 <!-- start code block file="snippets/stringInterpolation1.js" -->
+```js
+console.log(`Sorry, your guess '${answer}', isn't correct.`)
+```
 <!-- end code block -->
 This method of interpolating is called Template Strings.
 Note: Make sure you are using backticks instead of single or double quotes.
@@ -398,6 +427,11 @@ Note: Make sure you are using backticks instead of single or double quotes.
 #### `for` Loops
 Open `forLoop.js` and we'll type some code in...
 <!-- start code block file="snippets/loops1.js" -->
+```js
+for (let i = 0; i < 10; i++) {
+  console.log(i)
+}
+```
 <!-- end code block -->
 
 Save this file and return to your terminal.
@@ -406,10 +440,26 @@ Now type `node forLoop.js` and hit ENTER.
 
 which is _almost_ equivalent to:
 <!-- start code block file="snippets/loops2.js" -->
+```js
+let i = 0
+while (i < 10) {
+  console.log(i)
+  i++
+}
+```
 <!-- end code block -->
 
 Nesting conditionals in loops:
 <!-- start code block file="snippets/loops3.js" -->
+```js
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    console.log('five!')
+  } else {
+    console.log('nah')
+  }
+}
+```
 <!-- end code block -->
 
 Save. Think about what you expect this file to produce to the terminal...
