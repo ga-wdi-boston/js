@@ -1,21 +1,21 @@
 'use strict'
 
-const num = 1
+const aNumber = 1
 
-const str = '1'
+const aString = 'this is a string'
 
-const bool = true
+const aBoolean = true
 
-const nada = null
+const theNull = null
 
-let yetToBeDefined
+let theUndefined
 
-console.log('num is: ', num)
+console.log(`aNumber - value:"${aNumber}"; type:${typeof aNumber}`)
 
-console.log('str is: ', str)
+console.log(`aString, value:"${aString}"; type:${typeof aString}`)
 
-console.log('bool is: ', bool)
+console.log(`aBoolean, value:"${aBoolean}"; type:${typeof aBoolean}`)
 
-console.log('nada is: ', nada)
+console.log(`theNull, value:"${theNull}"; type:${typeof theNull}`)
 
-console.log(yetToBeDefined)
+console.log(`theUndefined, value:"${theUndefined}"; type:${typeof theUndefined}`)
