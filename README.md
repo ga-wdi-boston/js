@@ -406,11 +406,11 @@ Open `whileLoop.js` and we'll type some code in...
 let count = process.argv[2]
 
 while (count < 5) {
-  console.log('Im inside of the loop, count is ' + count)
+  console.log('Inside of the loop, count is ' + count)
   count++
 }
 
-console.log('Im outside of the loop, count is ' + count)
+console.log('Outside of the loop, count is ' + count)
 ```
 <!-- end code block -->
 Save this file and return to your terminal.
